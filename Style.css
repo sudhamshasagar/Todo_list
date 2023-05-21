@@ -1,0 +1,108 @@
+*{
+	margin: 0px;
+	box-sizing: border-box;
+}
+.mylist{
+	height: 100vh;
+	background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+	background-repeat: no-repeat;
+	padding: 25px;
+}
+.insidelist{
+	width: 60vh;
+	height: 50%;
+	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 45px;
+	justify-content: center;
+}
+
+.insidelist h1{
+	font-size: 23px;
+	margin-top: 12.2px;
+	justify-content: center;
+	display: flex;
+	padding: 5px;
+}
+
+.insidelist h1 i{
+	font-size: 23px;
+	margin-left: 4px;
+	padding: 3.7px;
+
+}
+.values{
+	justify-content: center;
+	padding: 25px;
+	display: flex;
+	color: black;
+	font-weight: bolder;
+}
+input{
+	border-radius: 5px;
+	border-color: black;
+	border-style: solid;
+	flex: 1;
+	background: #FFF0F5;
+	opacity: 1.5;
+	height: 40px;
+
+}
+button{
+	margin-left: 5px;
+	border-radius: 5px;
+	border-color: black;
+	border-style: ridge;
+	height: 38px;
+	cursor: pointer;
+	border-radius: 5px;
+	background: #E6E6FA;
+	font-weight: bolder;
+}
+ul li{
+	list-style: none;
+	user-select: contain;
+	position: absolute;
+	font-size: 17px;
+	padding: 10px 6px 10px 35px;
+	cursor: pointer;
+}
+
+.mylist li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.mylist li::before {
+  content: "";
+  position: absolute;
+  top: 11.5px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: gray;
+  
+}
+
+.mylist li.selected::before {
+  background-color: transparent;
+  background-image: url('check-solid.png');
+  background-size: cover;
+}
+ul li span{
+	padding: 1px;
+	font-size: 20px;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	position: absolute;
+	right: 17px;
+	color: darkred;
+	font-weight: bolder;
+}
+ul li span::hover{
+	background-color: red;
+	color: black;
+}
